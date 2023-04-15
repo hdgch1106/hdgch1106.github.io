@@ -14,6 +14,7 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
     background-color: #191c32;
     color: #ffff;
 }
@@ -158,4 +159,40 @@ main li {
     width: 346px;
     height: 550px;
     border: 7px solid aqua;
+}
+
+/*About*/
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info {
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color:  #191c32;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.about p {
+    margin-bottom: 1.1em;
 }
