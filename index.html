@@ -19,54 +19,54 @@
                     <h2>H<span>G</span></h2>
                 </div>
                 <ul class="menu">
-                    <li><a class="active" href="#">Inicio</a></li>
-                    <li><a href="#">Acerca de m&iacute</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#about">Acerca de m&iacute</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact-section" onclick="toContact()">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main class="main">
-            <div class="info-content">
+        <main class="main" id="main">
+            <div class="info_content">
                 <h1>Soy <span>Hugo</span> Grados</h1>
                 <div id="description">
                     <p>Desarrollador de aplicaciones de escritorio en Java y aplicaciones m&oacuteviles en
                         Flutter</p>
                 </div>
                 <div class="buttons">
-                    <ul class="social-media">
-                        <li class="li-smedia">
+                    <ul class="social_media">
+                        <li class="li_smedia">
                             <a href="https://www.linkedin.com/in/hdgch/" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
-                        <li class="li-smedia">
+                        <li class="li_smedia">
                             <a href="https://github.com/hdgch1106" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
-                        <li class="li-smedia">
+                        <li class="li_smedia">
                             <a href="https://stackoverflow.com/users/21635583/hugo-david-grados-changanaqui"
                                 target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-stack-overflow"></i>
                             </a>
                         </li>
-                        <li class="li-smedia">
+                        <li class="li_smedia">
                             <a href="https://medium.com/@hdgch1106" target="_blank" rel="noopener noreferrer">
                                 <i class="fa-brands fa-medium"></i>
                             </a>
                         </li>
-                        <li class="li-smedia">
+                        <li class="li_smedia">
                             <a href="https://www.youtube.com/@MilkoNightServersPlugins" target="_blank"
                                 rel="noopener noreferrer">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
                     </ul>
-                    <div class="button-cv">
+                    <div class="button_cv">
                         <a href="./src/cv/cv.pdf" download="cv.pdf">
-                            <button class="download-cv">Descargar CV</button>
+                            <button class="download_cv">Descargar CV</button>
                         </a>
                     </div>
 
@@ -80,10 +80,10 @@
     </div>
 
 
-    <div class="about">
+    <div class="about" id="about">
         <img src="./src/img/about.jpeg" alt="me-about">
 
-        <div class="about-info">
+        <div class="about_info">
             <h2>Acerca de m&iacute</h2>
             <div class="divider"></div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate repudiandae nihil cupiditate, sit
@@ -92,99 +92,181 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptas et quod, ut mollitia quidem
                 reprehenderit deleniti quam error consequuntur. Eum veniam esse molestias deserunt consequatur est,
                 tempora minima magni.</p>
-            <button class="download-cv">Leer m&aacutes</button>
+            <button class="download_cv">Leer m&aacutes</button>
         </div>
     </div>
 
 
-    <div class="portfolio">
-        <div class="portfolio-headings">
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio_headings">
             <h2>Mi portafolio</h2>
             <div class="divider"></div>
         </div>
         <div class="container">
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img" onclick="showProject(this)" data-title="Sistema Transporte de Carga" data-link=""
+                    data-desc="Sistema de transporte de carga desarrollado en Java, permite realizar el crud de cliente, conductor, vehiculo, registrar envios, reportes y mas."
+                    data-tools="Java, MySQL, Xampp">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
+                    <h2>Sistema Transporte de Carga</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                </div>
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
+                <div class="card_img">
+                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                 </div>
-                <div class="card-title">
+                <div class="card_title">
                     <h2>Project Description</h2>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-img">
-                    <img class="card-img-project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card-title">
-                    <h2>Project Description</h2>
+        </div>
+
+        <div id="project-popup" class="project d-none">
+            <div class="project-body">
+                <a class="close-project" onclick="closeProject()">&times;</a>
+                <div class="columns">
+                    <div class="column-img">
+                        <a id="project-link" target="_blank">
+                            <img class="img-project" id="project-img"></a>
+                    </div>
+                    <div class="column project-desc">
+                        <h4 class="title" id="project-name">Titulo</h4>
+                        <div class="characteristics">
+                            <div class="subtitle-container">
+                                <h5 class="subtitle">Tecnolog&iacuteas</h5>
+                            </div>
+                            <ul class="lis" id="project-list"></ul>
+                            <div class="subtitle-container">
+                                <h5 class="subtitle">Acerca del proyecto</h5>
+                            </div>
+                            <div class="subtitle-container">
+                                <h6 class="subtitle" id="project-desc"></h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="contact_section" id="contact-section">
+        <div class="contact_container">
+            <div class="contact_content">
+                <h2 class="title">&iquestQuieres ponerte en contacto?</h2>
+                <h4 class="subtitle">Encuentrame en LinkedIn, Github, Stackoverflow, Medium o en Youtube</h4>
+            </div>
+            <div>
+                <ul class="social_media">
+                    <li class="li_smedia">
+                        <a href="https://www.linkedin.com/in/hdgch/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in" title="Sigueme en LinkedIn"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://github.com/hdgch1106" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github" title="Sigueme en Github"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://stackoverflow.com/users/21635583/hugo-david-grados-changanaqui" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-stack-overflow" title="Sigueme en Stackoverflow"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://medium.com/@hdgch1106" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-medium" title="Sigueme en Medium"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://www.youtube.com/@MilkoNightServersPlugins" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-youtube" title="Sigueme en Youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="emailme">
+                <h6>O enviame un email a
+                    <a
+                        href="mailto:hdgch1106@gmail.com?Subject=Hola%20Hugo!%20Vengo%20de%20tu%20pagina">hdgch1106@gmail.com</a>
+                </h6>
+            </div>
+            <div class="copyright">
+                <h6 class="subtitle">&copy Copyright <span id="current_year"></span>. Hugo Grados</h6>
+            </div>
+        </div>
+
+    </div>
 </body>
+<script src="./js/index.js"></script>
 
 </html>
