@@ -22,7 +22,8 @@
                     <li><a href="#" class="menu-item" id="menu-item-1">Inicio</a></li>
                     <li><a href="#about" class="menu-item" id="menu-item-2">Acerca de m&iacute</a></li>
                     <li><a href="#portfolio" class="menu-item" id="menu-item-3">Portafolio</a></li>
-                    <li><a href="#contact-section" onclick="toContact()" class="menu-item" id="menu-item-4">Contacto</a></li>
+                    <li><a href="#contact-section" onclick="toContact()" class="menu-item" id="menu-item-4">Contacto</a>
+                    </li>
                 </ul>
                 <div class="toggle-menu">
                     <i class="fas fa-bars" id="toggle_open"></i>
@@ -38,46 +39,37 @@
                     <p>Desarrollador de aplicaciones de escritorio en Java y aplicaciones m&oacuteviles en
                         Flutter</p>
                 </div>
-                <div class="buttons">
-                    <ul class="social_media">
-                        <li class="li_smedia">
-                            <a href="https://www.linkedin.com/in/hdgch/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="li_smedia">
-                            <a href="https://github.com/hdgch1106" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="li_smedia">
-                            <a href="https://stackoverflow.com/users/21635583/hugo-david-grados-changanaqui"
-                                target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-stack-overflow"></i>
-                            </a>
-                        </li>
-                        <li class="li_smedia">
-                            <a href="https://medium.com/@hdgch1106" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-medium"></i>
-                            </a>
-                        </li>
-                        <li class="li_smedia">
-                            <a href="https://www.youtube.com/@MilkoNightServersPlugins" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="button_cv">
-                        <a href="./src/cv/cv.pdf" download="cv.pdf">
-                            <button class="download_cv">Descargar CV</button>
+                <ul class="social_media">
+                    <li class="li_smedia">
+                        <a href="https://www.linkedin.com/in/hdgch/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                    </div>
-
-                </div>
-
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://github.com/hdgch1106" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://stackoverflow.com/users/21635583/hugo-david-grados-changanaqui" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://medium.com/@hdgch1106" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-medium"></i>
+                        </a>
+                    </li>
+                    <li class="li_smedia">
+                        <a href="https://www.youtube.com/@MilkoNightServersPlugins" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-                <img src="./src/img/foto.png" alt="me">
+            <img src="./src/img/foto.png" alt="me">
         </main>
     </div>
 
@@ -100,116 +92,120 @@
 
 
     <div class="portfolio" id="portfolio">
-        <div class="portfolio_headings">
-            <h2>Mi portafolio</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="container">
-            <div class="card">
-                <div class="card_img" onclick="showProject(this)" data-title="Sistema Transporte de Carga" data-link=""
-                    data-desc="Sistema de transporte de carga desarrollado en Java, permite realizar el crud de cliente, conductor, vehiculo, registrar envios, reportes y mas."
-                    data-tools="Java, MySQL, Xampp">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Sistema Transporte de Carga</h2>
-                </div>
+        <div class="portfolio-info">
+            <div class="portf-head">
+                <h2>Mi portafolio</h2>
+                <div class="divider"></div>
             </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
-                </div>
-                <div class="card_title">
-                    <h2>Project Description</h2>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="project-popup" class="project d-none">
-            <div class="project-body">
-                <a class="close-project" onclick="closeProject()">&times;</a>
-                <div class="columns">
-                    <div class="column-img">
-                        <a id="project-link" target="_blank">
-                            <img class="img-project" id="project-img"></a>
+            <div class="container">
+                <div class="card">
+                    <div class="card_img" onclick="showProject(this)" data-title="Sistema Transporte de Carga"
+                        data-link=""
+                        data-desc="Sistema de transporte de carga desarrollado en Java, permite realizar el crud de cliente, conductor, vehiculo, registrar envios, reportes y mas."
+                        data-tools="Java, MySQL, Xampp">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
                     </div>
-                    <div class="column project-desc">
-                        <h4 class="title" id="project-name">Titulo</h4>
-                        <div class="characteristics">
-                            <div class="subtitle-container">
-                                <h5 class="subtitle">Tecnolog&iacuteas</h5>
-                            </div>
-                            <ul class="lis" id="project-list"></ul>
-                            <div class="subtitle-container">
-                                <h5 class="subtitle">Acerca del proyecto</h5>
-                            </div>
-                            <div class="subtitle-container">
-                                <h6 class="subtitle" id="project-desc"></h5>
+                    <div class="card_title">
+                        <h2>Sistema Transporte de Carga</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img class="card_img_project" src="./src/img/transporteCarga-project.png" alt="">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project Description</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="project-popup" class="project d-none">
+                <div class="project-body">
+                    <a class="close-project" onclick="closeProject()">&times;</a>
+                    <div class="columns">
+                        <div class="column-img">
+                            <a id="project-link" target="_blank">
+                                <img class="img-project" id="project-img"></a>
+                        </div>
+                        <div class="column project-desc">
+                            <h4 class="title" id="project-name">Titulo</h4>
+                            <div class="characteristics">
+                                <div class="subtitle-container">
+                                    <h5 class="subtitle">Tecnolog&iacuteas</h5>
+                                </div>
+                                <ul class="lis" id="project-list"></ul>
+                                <div class="subtitle-container">
+                                    <h5 class="subtitle">Acerca del proyecto</h5>
+                                </div>
+                                <div class="subtitle-container">
+                                    <h6 class="subtitle" id="project-desc">
+                                    </h6>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -225,35 +221,35 @@
                 <h2 class="title">&iquestQuieres ponerte en contacto?</h2>
                 <h4 class="subtitle">Encuentrame en LinkedIn, Github, Stackoverflow, Medium o en Youtube</h4>
             </div>
-                <ul class="social_media">
-                    <li class="li_smedia">
-                        <a href="https://www.linkedin.com/in/hdgch/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin-in" title="Sigueme en LinkedIn"></i>
-                        </a>
-                    </li>
-                    <li class="li_smedia">
-                        <a href="https://github.com/hdgch1106" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github" title="Sigueme en Github"></i>
-                        </a>
-                    </li>
-                    <li class="li_smedia">
-                        <a href="https://stackoverflow.com/users/21635583/hugo-david-grados-changanaqui" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fa-brands fa-stack-overflow" title="Sigueme en Stackoverflow"></i>
-                        </a>
-                    </li>
-                    <li class="li_smedia">
-                        <a href="https://medium.com/@hdgch1106" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-medium" title="Sigueme en Medium"></i>
-                        </a>
-                    </li>
-                    <li class="li_smedia">
-                        <a href="https://www.youtube.com/@MilkoNightServersPlugins" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-youtube" title="Sigueme en Youtube"></i>
-                        </a>
-                    </li>
-                </ul>
+            <ul class="social_media">
+                <li class="li_smedia">
+                    <a href="https://www.linkedin.com/in/hdgch/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in" title="Sigueme en LinkedIn"></i>
+                    </a>
+                </li>
+                <li class="li_smedia">
+                    <a href="https://github.com/hdgch1106" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" title="Sigueme en Github"></i>
+                    </a>
+                </li>
+                <li class="li_smedia">
+                    <a href="https://stackoverflow.com/users/21635583/hugo-david-grados-changanaqui" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-stack-overflow" title="Sigueme en Stackoverflow"></i>
+                    </a>
+                </li>
+                <li class="li_smedia">
+                    <a href="https://medium.com/@hdgch1106" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-medium" title="Sigueme en Medium"></i>
+                    </a>
+                </li>
+                <li class="li_smedia">
+                    <a href="https://www.youtube.com/@MilkoNightServersPlugins" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-youtube" title="Sigueme en Youtube"></i>
+                    </a>
+                </li>
+            </ul>
             <div class="emailme">
                 <h6>O enviame un email a
                     <a

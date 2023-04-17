@@ -79,12 +79,12 @@ body {
 }
 
 .info_content h1 {
-    font-size: clamp(4vw, 1.5em, 2em);
+    font-size: clamp(1.7em, 3.5vw, 4em);
 }
 
 .info_content #description {
-    font-size: 1.1em;
-    margin-top: 20px;
+    font-size: clamp(1.1em, 1.5vw, 3em);
+    padding-top: 20px;
 }
 
 .info_content span {
@@ -93,34 +93,12 @@ body {
 
 /*Home buttons*/
 
-.buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+.info_content .social_media {
+    padding-top: 20px;
 }
 
-.social_media {
-    display: flex;
-}
-
-.social_media a {
-    font-size: 30px;
-    color: aqua;
-    display: inline-block;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 0.25s;
-    transition-duration: 0.25s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-.social_media a:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    text-decoration: none;
+.info_content .social_media a {
+    font-size: clamp(1.5em, 2.5vw, 3em);
 }
 
 .li_smedia {
@@ -136,6 +114,7 @@ li {
 }
 
 .download_cv {
+    margin-bottom: 10px;
     padding: 10px 20px;
     background-color: aqua;
     border: none;
@@ -182,12 +161,12 @@ li {
 }
 
 .about_info {
-    grid-column: 5/10;
+    grid-column: 5/12;
     padding: 3em;
 }
 
 .about_info h2 {
-    font-size: 2em;
+    font-size: clamp(1.6em, 2.4vw, 4em);
     color: #191c32;
 }
 
@@ -195,33 +174,27 @@ li {
     height: 4px;
     width: 60px;
     background-color: aqua;
-    margin-top: 5px;
-    margin-bottom: 2em;
+    margin-top: 10px;
+    margin-bottom: clamp(1em, 1vw, 1.5em);
 }
 
 .about p {
     margin-bottom: 1.1em;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: clamp(1em, 1.3vw, 2em);
 }
 
 /*Portfolio*/
 
 .portfolio {
-    width: 100%;
+    width: 100vw;
     background-color: #191c32;
     color: #ffff;
-    padding-bottom: 2em;
+    padding: 2em;
 }
 
-.portfolio_headings {
-    width: 100vw;
-    padding-top: 2em;
-    padding-left: 5em;
-}
-
-.portfolio_headings h2 {
-    font-size: 2.5em;
+.portfolio-info .portf-head {
+    font-size: clamp(1.2em, 1.8vw, 4em);
 }
 
 .portfolio .container {
@@ -260,10 +233,10 @@ li {
     filter: brightness(0.5);
 }
 
-.card_title {
+.card .card_title {
     margin-top: 1em;
     text-align: center;
-    font-size: 0.9em;
+    font-size: clamp(0.9em, 0.9vw, 3em);
 }
 
 /*Project Popup*/
@@ -364,40 +337,41 @@ li {
 
 .column.project-desc .title {
     color: #191c32;
-    font-size: 1.5em;
+    font-size: clamp(1.2em, 1.6vw, 3vw);
 }
 
 .subtitle-container .subtitle {
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: clamp(1em, 1.4vw, 3vw);
 }
 
 .project-desc .characteristics .lis {
     color: black;
     margin-left: 2rem;
+    font-size: clamp(0.9em, 1.1vw, 3vw);
 }
 
 .project-desc .characteristics .lis li {
     list-style: circle;
-    margin-bottom: 0.5em;
+    padding-bottom: 5px;
     font-weight: 400;
 }
 
 .column.project-desc h4 {
     color: #191c32;
-    margin-bottom: 1em;
+    padding-bottom: 10px
 }
 
 .column.project-desc h5 {
     color: black;
-    margin-top: 1.2em;
-    margin-bottom: 0.5em;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .column.project-desc h6 {
     color: black;
-    margin-top: 1.2em;
-    font-size: 1em;
+    padding-top: 10px;
+    font-size: clamp(0.9em, 1.1vw, 3vw);
 }
 
 /*Contact*/
@@ -430,14 +404,14 @@ li {
 .contact_content .title {
     text-align: center;
     margin-bottom: 1em;
-    font-size: 2.5em;
+    font-size: clamp(2em, 3vw, 5em);
 }
 
 .contact_content .subtitle {
     text-align: center;
     margin-bottom: 1.2em;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: clamp(1.2em, 1.5vw, 3em);
+    font-weight: 500;
 }
 
 .contact_container .social_media .li_smedia {
@@ -455,7 +429,7 @@ li {
 }
 
 .contact_container .emailme h6 {
-    font-size: 1.1em;
+    font-size: clamp(0.9em, 1.2vw, 2em);
     font-weight: 400;
 }
 
@@ -474,7 +448,34 @@ li {
 }
 
 .copyright .subtitle {
-    font-size: 1em;
+    font-size: clamp(0.8em, 1vw, 2em);
+}
+
+/*Reutilizable*/
+.social_media {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.social_media a {
+    font-size: 30px;
+    color: aqua;
+    display: inline-block;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.social_media a:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 980px) {
@@ -495,7 +496,7 @@ li {
     .show-menu {
         transform: translateX(0%);
         transition: all .5s ease-in-out;
-      }
+    }
 
     .menu li {
         margin: 1em;
@@ -534,44 +535,22 @@ li {
     }
 
     .info_content h1 {
-        margin-top: 20px;
+        padding-top: 50px;
     }
 
     .info_content #description {
         text-align: center;
-        font-size: 1em;
-        margin: 20px 5px 0 5px;
+        padding: 15px 5px 0 15px;
         font-weight: 300;
     }
-
-    .buttons {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .buttons .social_media {
-        margin-bottom: 20px;
-    }
-
+    
     .main img {
-        width: min(70%, 346px);
-        height: min(70%, 550px);
+        width: min(80%, 346px);
+        height: min(65%, 550px);
     }
 
     .about_info {
         padding: 1em;
-    }
-
-    .about_info h2 {
-        font-size: 1.5em;
-        color: #191c32;
-    }
-
-    .about p {
-        font-size: 1.2em;
     }
 
     .portfolio {
@@ -580,7 +559,7 @@ li {
 
     .portfolio_headings {
         width: 100%;
-        
+
     }
 
     .portfolio_headings h2 {
@@ -594,6 +573,10 @@ li {
     .portfolio .container {
         grid-template-columns: auto auto;
         gap: 40px
+    }
+
+    .column.project-desc {
+        justify-content: start;
     }
 
     .contact_section {
