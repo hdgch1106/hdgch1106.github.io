@@ -239,6 +239,13 @@ li {
     font-size: clamp(0.9em, 0.9vw, 3em);
 }
 
+.card_title a {
+    color: white;
+    font-size: clamp(1.5em, 1.3vw, 3em);
+    font-weight: 600;
+    text-decoration: none;
+}
+
 /*Project Popup*/
 
 
